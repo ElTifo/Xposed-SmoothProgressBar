@@ -4,6 +4,7 @@ Smooth System Progress Bars - Xposed Module
 Libraries and references used to build the module:
 
 Android Holo ColorPicker - https://github.com/LarsWerkman/HoloColorPicker
+
 SmoothProgressBar - https://github.com/castorflex/SmoothProgressBar
 
 Module Description:
