@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Barras de Progresso Suaves</string>
+    
+    <string-array name="interpolators">
+        <item>Acelerar</item>
+        <item>Linear</item>
+        <item>AcelerarDecelerar</item>
+        <item>Decelerar</item>
+    </string-array>
+
+    <string name="saturation">Saturación</string>
+    <string name="value">Valor</string>
+    <string name="opacity">Opacidad</string>
+    <string name="preview">Vista previa</string>
+    <string name="restore">Restaurar</string>
+    <string name="save">Guardar</string>
+    <string name="apply">Aplicar</string>
+    <string name="invalid_color">Color no válido</string>
+    
+    <string name="item_successfully_saved">Elementos guardados con éxito!</string>
+    <string name="scroll_down_hint">Precorra la lista abajo para agregar más colores</string>
+    <string name="reversed">Revertido</string>
+    <string name="mirror_mode">Modo espejo</string>
+    <string name="speed">Velocidad: %s</string>
+    <string name="stroke_width">Ancho de trazo: %ddp</string>
+    <string name="separator_length">Separador: %ddp</string>
+    <string name="sections_count">Secciones: %s</string>
+    <string name="interpolator">Interpolador:</string>
+    <string name="xposed_description">Sustituye las barras de progreso originales por unos trazos personalizados y suaves</string>
+    <string name="tap_to_add">Pulse para añadir un color</string>
+    <string name="tap_to_change">Pulse para cambiar de color</string>
+    <string name="hold_to_revert">Pulse para cambiar o sostenga para establecer el color por defecto</string>
+    <string name="hold_to_delete">Pulse para cambiar o sostenga para eliminar el color</string>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Barras de Progresso Suaves</string>
+    
+    <string-array name="interpolators">
+        <item>Acelerar</item>
+        <item>Linear</item>
+        <item>AcelerarDesacelerar</item>
+        <item>Desacelerar</item>
+    </string-array>
+
+    <string name="saturation">Saturação</string>
+    <string name="value">Valor</string>
+    <string name="opacity">Opacidade</string>
+    <string name="preview">Pré visualizar</string>
+    <string name="restore">Restaurar</string>
+    <string name="save">Guardar</string>
+    <string name="apply">Aplicar</string>
+    <string name="invalid_color">Cor inválida</string>
+    
+    <string name="item_successfully_saved">Itens guardados com sucesso!</string>
+    <string name="scroll_down_hint">Precorra a lista abaixo para adicionar mais cores</string>
+    <string name="reversed">Ao contrário</string>
+    <string name="mirror_mode">Modo espelho</string>
+    <string name="speed">Velocidade: %s</string>
+    <string name="stroke_width">Grossura: %ddp</string>
+    <string name="separator_length">Separador: %ddp</string>
+    <string name="sections_count">Secções: %s</string>
+    <string name="interpolator">Interpolador:</string>
+    <string name="xposed_description">Substitui as barras de progresso originais por umas personalizadas e com movimentos suaves</string>
+    <string name="tap_to_add">Toque para adicionar uma cor</string>
+    <string name="tap_to_change">Toque para alterar</string>
+    <string name="hold_to_revert">Toque para alterar ou pressione para restaurar a cor por defeito</string>
+    <string name="hold_to_delete">Toque para alterar ou pressione para remover</string>
+
+</resources>

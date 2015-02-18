@@ -22,6 +22,8 @@ public class SettingsHelper {
 	private static final String KEY_SEPARATOR_LENGTH = "progress_bar_separator_length";
 	private static final String KEY_STROKE_WIDTH = "progress_bar_stroke_width";
 	private static final String KEY_SPEED = "progress_bar_speed";
+	private static final String KEY_MINSWEEPANGLE = "circular_bar_min_sweep_angle";
+	private static final String KEY_MAXSWEEPANGLE = "circular_bar_max_sweep_angle";
 	private static final String KEY_COLOR = "progress_bar_color_hex";
 	private static final String KEY_COLORS = "progress_bar_colors";
 	private static final String KEY_INTERPOLATOR = "progress_bar_interpolator";
@@ -111,6 +113,25 @@ public class SettingsHelper {
 
 	public SettingsHelper setSpeed(float value) {
 		mPreferences.edit().putFloat(KEY_SPEED, value).commit();
+		return this;
+	}
+	
+	
+	public int getMinSweepAngle() {
+		return getInt(KEY_MINSWEEPANGLE, 20);
+	}
+
+	public SettingsHelper setMinSweepAngle(int value) {
+		mPreferences.edit().putInt(KEY_MINSWEEPANGLE, value).commit();
+		return this;
+	}
+	
+	public int getMaxSweepAngle() {
+		return getInt(KEY_MAXSWEEPANGLE, 300);
+	}
+
+	public SettingsHelper setMaxSweepAngle(int value) {
+		mPreferences.edit().putInt(KEY_MAXSWEEPANGLE, value).commit();
 		return this;
 	}
 

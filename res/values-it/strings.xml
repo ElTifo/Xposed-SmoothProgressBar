@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Barre di avanzamento Dolci</string>
+    
+    <string-array name="interpolators">
+        <item>Accelerare</item>
+        <item>Lineare</item>
+        <item>AccelerareRallentare</item>
+        <item>Rallentare</item>
+    </string-array>
+
+    <string name="saturation">Saturazione</string>
+    <string name="value">Valore</string>
+    <string name="opacity">Opacità</string>
+    <string name="preview">Anteprima</string>
+    <string name="restore">Ripristinare</string>
+    <string name="save">Salva</string>
+    <string name="apply">Applicare</string>
+    <string name="invalid_color">Colore non valido</string>
+    
+    <string name="item_successfully_saved">Elementi salvati con successo!</string>
+    <string name="scroll_down_hint">Scorrere l\'elenco per aggiungere più colori</string>
+    <string name="reversed">Invertito</string>
+    <string name="mirror_mode">Modalità specchio</string>
+    <string name="speed">Velocità: %s</string>
+    <string name="stroke_width">Larghezza: %ddp</string>
+    <string name="separator_length">Separatore: %ddp</string>
+    <string name="sections_count">Sezioni: %s</string>
+    <string name="interpolator">Interpolator:</string>
+    <string name="xposed_description">Sostituisce le barre di avanzamento originali per colpi personalizzati e dolci</string>
+    <string name="tap_to_add">Toccare per aggiungere un colore</string>
+    <string name="tap_to_change">Toccare per cambiare il colore</string>
+    <string name="hold_to_revert">Toccare per cambiare o tenere premuto per impostare il colore di default</string>
+    <string name="hold_to_delete">Toccare per cambiare o tenere premuto per eliminare il colore</string>
+
+</resources>

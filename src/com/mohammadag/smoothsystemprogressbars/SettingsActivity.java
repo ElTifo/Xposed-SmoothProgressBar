@@ -26,9 +26,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/*castorflex used these as well*/
+import com.mohammadag.smoothsystemprogressbars.CircularProgressBar;
+import com.mohammadag.smoothsystemprogressbars.CircularProgressDrawable;
+import com.mohammadag.smoothsystemprogressbars.SmoothProgressBar;
+
 public class SettingsActivity extends Activity {
 
 	private SmoothProgressBar mProgressBar;
+	private CircularProgressBar mCircularProgressBar;
 	private CheckBox mCheckBoxMirror;
 	private CheckBox mCheckBoxReversed;
 	private Spinner mSpinnerInterpolators;
@@ -41,15 +47,15 @@ public class SettingsActivity extends Activity {
 	private TextView mTextViewSeparatorLength;
 	private TextView mTextViewSectionsCount;
 
-	private float mSpeed;
-	private int mStrokeWidth;
+	private Interpolator mCurrentInterpolator;
+	private int mStrokeWidth = 4;
 	private int mSeparatorLength;
 	private int mSectionsCount;
+	private float mSpeed = 1f;
 
 	private SettingsHelper mSettingsHelper;
 	protected int mColor = Color.parseColor("#33b5e5");
 	private ListView mColorsListView;
-	private Interpolator mInterpolator;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +66,7 @@ public class SettingsActivity extends Activity {
 		mSettingsHelper = new SettingsHelper(getApplicationContext());
 
 		mProgressBar = (SmoothProgressBar) findViewById(R.id.progressbar);
+		mCircularProgressBar = (CircularProgressBar) findViewById(R.id.progressbar_circular);
 		mCheckBoxMirror = (CheckBox) findViewById(R.id.checkbox_mirror);
 		mCheckBoxReversed = (CheckBox) findViewById(R.id.checkbox_reversed);
 		mSpinnerInterpolators = (Spinner) findViewById(R.id.spinner_interpolator);
@@ -72,7 +79,7 @@ public class SettingsActivity extends Activity {
 		mTextViewSeparatorLength = (TextView) findViewById(R.id.textview_separator_length);
 		mTextViewStrokeWidth = (TextView) findViewById(R.id.textview_stroke_width);
 		mColorsListView = (ListView) findViewById(R.id.colorListView);
-
+		
 		OnClickListener checkboxListener = new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -81,17 +88,17 @@ public class SettingsActivity extends Activity {
 		};
 		
 		mSectionsCount = mSettingsHelper.getSectionsCount();
-
+		
 		mCheckBoxMirror.setOnClickListener(checkboxListener);
 		mCheckBoxReversed.setOnClickListener(checkboxListener);
-
+		
 		mSeekBarSpeed.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				mSpeed = ((float) progress + 1) / 10;
 				mTextViewSpeed.setText(getString(R.string.speed, String.valueOf(mSpeed)));
-				if (fromUser)
-					setValues();
+				mProgressBar.setSmoothProgressDrawableSpeed(mSpeed);
+				updateValues();
 			}
 
 			@Override
@@ -108,12 +115,9 @@ public class SettingsActivity extends Activity {
 		mSeekBarSectionsCount.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-				
+				mSectionsCount = progress + 1;
 				mTextViewSectionsCount.setText(getString(R.string.sections_count, progress+1));
-				if (fromUser) {
-					mSectionsCount = progress + 1;
-					setValues();
-				}
+				mProgressBar.setSmoothProgressDrawableSectionsCount(mSectionsCount);
 			}
 
 			@Override
@@ -132,8 +136,7 @@ public class SettingsActivity extends Activity {
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				mSeparatorLength = progress;
 				mTextViewSeparatorLength.setText(getString(R.string.separator_length, mSeparatorLength));
-				if (fromUser)
-					setValues();
+				mProgressBar.setSmoothProgressDrawableSeparatorLength(dpToPx(mSeparatorLength));
 			}
 
 			@Override
@@ -152,7 +155,8 @@ public class SettingsActivity extends Activity {
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				mStrokeWidth = progress;
 				mTextViewStrokeWidth.setText(getString(R.string.stroke_width, mStrokeWidth));
-				setValues();
+				mProgressBar.setSmoothProgressDrawableStrokeWidth(dpToPx(mStrokeWidth));
+				updateValues();
 			}
 
 			@Override
@@ -165,7 +169,7 @@ public class SettingsActivity extends Activity {
 
 			}
 		});
-
+		
 		mSeekBarSeparatorLength.setProgress(mSettingsHelper.getProgressSeparatorLength());
 		mSeekBarSectionsCount.setProgress(mSectionsCount);
 		mSeekBarStrokeWidth.setProgress((int)mSettingsHelper.getStrokeWidth());
@@ -186,6 +190,7 @@ public class SettingsActivity extends Activity {
 			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {}
 		});
+	    updateValues();
 
 		mColorsListView.setAdapter(new ColorArrayAdapter(getApplicationContext(), 0, mSettingsHelper));
 		mColorsListView.setOnItemClickListener(new OnItemClickListener() {
@@ -224,9 +229,9 @@ public class SettingsActivity extends Activity {
 
 				mSettingsHelper.setProgressBarColors(colorsNew);
 				((ColorArrayAdapter) mColorsListView.getAdapter()).notifyDataSetChanged();
-
+				
 				setValues();
-
+				
 				return true;
 			}
 		});
@@ -247,6 +252,7 @@ public class SettingsActivity extends Activity {
 		mTextViewSectionsCount.setText(getString(R.string.sections_count,
 				String.valueOf(mSectionsCount)));
 		mSeekBarSectionsCount.setProgress(mSectionsCount-1);
+		
 	}
 
 	@Override
@@ -283,35 +289,55 @@ public class SettingsActivity extends Activity {
 			return Color.parseColor("#33b5e5");
 		}
 	}
-
+	
 	private void setValues() {
-		mProgressBar.setSmoothProgressDrawableSpeed(mSpeed);
-		mProgressBar.setSmoothProgressDrawableSectionsCount(mSectionsCount);
-		mProgressBar.setSmoothProgressDrawableSeparatorLength(dpToPx(mSeparatorLength));
-		mProgressBar.setSmoothProgressDrawableStrokeWidth(dpToPx(mStrokeWidth));
 		mProgressBar.setSmoothProgressDrawableReversed(mCheckBoxReversed.isChecked());
 		mProgressBar.setSmoothProgressDrawableMirrorMode(mCheckBoxMirror.isChecked());
 
 		switch (mSpinnerInterpolators.getSelectedItemPosition()) {
 		case 1:
-			mInterpolator = new LinearInterpolator();
+			mCurrentInterpolator = new LinearInterpolator();
 			break;
 		case 2:
-			mInterpolator = new AccelerateDecelerateInterpolator();
+			mCurrentInterpolator = new AccelerateDecelerateInterpolator();
 			break;
 		case 3:
-			mInterpolator = new DecelerateInterpolator();
+			mCurrentInterpolator = new DecelerateInterpolator();
 			break;
 		case 0:
 		default:
-			mInterpolator = new AccelerateInterpolator();
+			mCurrentInterpolator = new AccelerateInterpolator();
 			break;
 		}
 
-		mProgressBar.setSmoothProgressDrawableInterpolator(mInterpolator);
+		mProgressBar.setSmoothProgressDrawableInterpolator(mCurrentInterpolator);
 		mProgressBar.setSmoothProgressDrawableColors(mSettingsHelper.getProgressBarColors());
+		updateValues();
 	}
+	
+	private void updateValues() {
+		CircularProgressDrawable circularProgressDrawable;
+		CircularProgressDrawable.Builder b = new CircularProgressDrawable
+			.Builder(this)
+			.colors(mSettingsHelper.getProgressBarColors())
+			.sweepSpeed(mSpeed)
+			.rotationSpeed(mSpeed)
+			.strokeWidth(dpToPx(mStrokeWidth))
+			.style(CircularProgressDrawable.Style.ROUNDED);
+		if (mCurrentInterpolator != null) {
+		  b.sweepInterpolator(mCurrentInterpolator);
+		}
+		mCircularProgressBar.setIndeterminateDrawable(circularProgressDrawable = b.build());
 
+		// /!\ Terrible hack, do not do this at home!
+		circularProgressDrawable.setBounds(0,
+			0,
+			mCircularProgressBar.getWidth(),
+			mCircularProgressBar.getHeight());
+		mCircularProgressBar.setVisibility(View.INVISIBLE);
+		mCircularProgressBar.setVisibility(View.VISIBLE);
+	  }
+	
 	public int dpToPx(int dp) {
 		Resources r = getResources();
 		int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
@@ -333,7 +359,7 @@ public class SettingsActivity extends Activity {
 			mSettingsHelper.setSpeed(mSpeed).setSectionCount(mSectionsCount).setStrokeWidth(mStrokeWidth);
 			mSettingsHelper.setProgressSeparatorLength(mSeparatorLength).setMirrored(mCheckBoxMirror.isChecked());
 			mSettingsHelper.setReversed(mCheckBoxReversed.isChecked()).setProgressBarColor(mColor);
-			mSettingsHelper.setProgressBarInterpolator(mInterpolator);
+			mSettingsHelper.setProgressBarInterpolator(mCurrentInterpolator);
 			Toast.makeText(this, getString(R.string.item_successfully_saved), Toast.LENGTH_SHORT).show();
 			return true;
 		case R.id.preview_item:

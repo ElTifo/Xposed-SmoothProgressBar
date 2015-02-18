@@ -44,6 +44,13 @@ public class ColorArrayAdapter extends ArrayAdapter<Integer> {
 		v.setBackgroundColor(color);
 		if (position+1 == getCount()) {
 			textView.setText(R.string.tap_to_add);
+		} 
+		else if (position == 0 && getCount() == 2 ) {
+			if (color == Color.parseColor("#33b5e5")){
+				textView.setText(R.string.tap_to_change);
+			}
+			else textView.setText(R.string.hold_to_revert); {
+			}
 		} else {
 			textView.setText(R.string.hold_to_delete);
 		}

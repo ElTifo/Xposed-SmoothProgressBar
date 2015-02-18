@@ -52,7 +52,7 @@ public class SmoothProgressBar extends ProgressBar {
 	}
 
 	public void applyStyle(int styleResId){
-
+		
 	}
 
 	private SmoothProgressDrawable checkIndeterminateDrawable(){

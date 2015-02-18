@@ -15,7 +15,8 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit {
 
 		XposedHelpers.findAndHookMethod(ProgressBar.class, "setIndeterminateDrawable", Drawable.class, new XC_MethodHook() {
 			@Override
-			protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+			protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+				
 				Drawable b = (Drawable) param.args[0];
 				if (b == null)
 					return;
@@ -23,13 +24,11 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit {
 				ProgressBar progressBar = (ProgressBar) param.thisObject;
 				if (progressBar == null)
 					return;
-
-				if (progressBar.getIndeterminateDrawable() instanceof SmoothProgressDrawable)
-					return;
-
+					
 				mSettingsHelper.reloadSettings();
 
 				final float scale = progressBar.getResources().getDisplayMetrics().density;
+				
 				if ("android.graphics.drawable.AnimationDrawable".equals(b.getClass().getName())) {
 					Drawable drawable = new SmoothProgressDrawable.Builder(progressBar.getContext())
 					.interpolator(mSettingsHelper.getProgressBarInterpolator())
@@ -41,9 +40,28 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit {
 					.reversed(mSettingsHelper.getReversed())
 					.colors(mSettingsHelper.getProgressBarColors())
 					.build();
+					
 					progressBar.setIndeterminateDrawable(drawable);
 
 					param.args[0] = drawable;
+					
+				}
+				
+				
+				if ("android.graphics.drawable.LayerDrawable".equals(b.getClass().getName())) {
+					Drawable drawable = new CircularProgressDrawable.Builder(progressBar.getContext())
+					.colors(mSettingsHelper.getProgressBarColors())
+					.strokeWidth(mSettingsHelper.getStrokeWidth(scale))
+					.sweepSpeed(mSettingsHelper.getSpeed())
+					.rotationSpeed(mSettingsHelper.getSpeed())
+					.sweepInterpolator(mSettingsHelper.getProgressBarInterpolator())
+					.style(CircularProgressDrawable.Style.ROUNDED)
+					.build();
+					
+					progressBar.setIndeterminateDrawable(drawable);
+					
+					param.args[0] = drawable;
+						
 				}
 			}
 		});

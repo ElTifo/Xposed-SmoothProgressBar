@@ -29,7 +29,9 @@
     <string name="sections_count">Sections count: %s</string>
     <string name="interpolator">Interpolator:</string>
     <string name="xposed_description">Replaces ProgressBar with a smoother implementation</string>
-    <string name="tap_to_add">Tap to add a color</string>
-    <string name="hold_to_delete">Tap and hold to delete</string>
+    <string name="tap_to_add">Tap to add color</string>
+    <string name="tap_to_change">Tap to change color</string>
+    <string name="hold_to_revert">Tap to change or hold to set default color</string>
+    <string name="hold_to_delete">Tap to change or hold to delete</string>
 
 </resources>

@@ -8,5 +8,13 @@
     <style name="AppBaseTheme" parent="android:Theme.Holo">
         <!-- API 14 theme customizations can go here. -->
     </style>
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
 
+    <style name="ProgressBar_Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal"></style>
+    <style name="CircularProgressBar" parent="@android:style/Widget.Holo.ProgressBar"></style>
+    
 </resources>
