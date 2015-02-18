@@ -1,5 +1,4 @@
-# Xposed Module -SmoothProgressBar
-Smooth System Progress Bars - Xposed Module
+# Smooth System Progress Bars - Xposed Module
 
 Libraries and references used to build the module:
 
