@@ -48,7 +48,8 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit {
 				}
 				
 				
-				if ("android.graphics.drawable.LayerDrawable".equals(b.getClass().getName())) {
+				if ("android.graphics.drawable.LayerDrawable".equals(b.getClass().getName()) || 
+						"android.graphics.drawable.AnimatedRotateDrawable".equals(b.getClass().getName())) {
 					Drawable drawable = new CircularProgressDrawable.Builder(progressBar.getContext())
 					.colors(mSettingsHelper.getProgressBarColors())
 					.strokeWidth(mSettingsHelper.getStrokeWidth(scale))
