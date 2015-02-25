@@ -1,6 +1,7 @@
 package com.mohammadag.smoothsystemprogressbars;
 
 import android.graphics.drawable.Drawable;
+import android.animation.ObjectAnimator;
 import android.widget.ProgressBar;
 import de.robv.android.xposed.IXposedHookZygoteInit;
 import de.robv.android.xposed.XC_MethodHook;
@@ -20,11 +21,11 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit {
 				Drawable b = (Drawable) param.args[0];
 				if (b == null)
 					return;
-
+				
 				ProgressBar progressBar = (ProgressBar) param.thisObject;
 				if (progressBar == null)
 					return;
-					
+				
 				mSettingsHelper.reloadSettings();
 
 				final float scale = progressBar.getResources().getDisplayMetrics().density;
@@ -47,9 +48,8 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit {
 					
 				}
 				
-				
 				if ("android.graphics.drawable.LayerDrawable".equals(b.getClass().getName()) || 
-						"android.graphics.drawable.AnimatedRotateDrawable".equals(b.getClass().getName())) {
+				    "android.graphics.drawable.AnimatedRotateDrawable".equals(b.getClass().getName())) {
 					Drawable drawable = new CircularProgressDrawable.Builder(progressBar.getContext())
 					.colors(mSettingsHelper.getProgressBarColors())
 					.strokeWidth(mSettingsHelper.getStrokeWidth(scale))
@@ -63,6 +63,49 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit {
 					
 					param.args[0] = drawable;
 						
+				}
+				
+				/*Trying stuff on Lollipop Framework...not really sure if this is the right way...*/ 
+				
+				ObjectAnimator anim = (ObjectAnimator) param.thisObject;
+				
+				/*For horizontal indeterminate*/
+				
+				if ("android.graphics.drawable.AnimatedVectorDrawable".equals(b.getClass().getName()) && 
+						"rotation".equals(anim.getPropertyName())!=true) {
+							Drawable drawable = new SmoothProgressDrawable.Builder(progressBar.getContext())							.interpolator(mSettingsHelper.getProgressBarInterpolator())
+							.sectionsCount(mSettingsHelper.getSectionsCount())
+							.separatorLength(mSettingsHelper.getProgressSeparatorLength())
+							.strokeWidth(mSettingsHelper.getStrokeWidth(scale))
+							.speed(mSettingsHelper.getSpeed())
+							.mirrorMode(mSettingsHelper.getMirrored())
+							.reversed(mSettingsHelper.getReversed())
+							.colors(mSettingsHelper.getProgressBarColors())
+							.build();
+							
+							progressBar.setIndeterminateDrawable(drawable);
+
+							param.args[0] = drawable;
+							
+				}
+				
+				/*For circular indeterminate*/
+				
+				if ("android.graphics.drawable.AnimatedVectorDrawable".equals(b.getClass().getName()) && 
+						"rotation".equals(anim.getPropertyName())==true) {
+						Drawable drawable = new CircularProgressDrawable.Builder(progressBar.getContext())
+						.colors(mSettingsHelper.getProgressBarColors())
+						.strokeWidth(mSettingsHelper.getStrokeWidth(scale))
+						.sweepSpeed(mSettingsHelper.getSpeed())
+						.rotationSpeed(mSettingsHelper.getSpeed())
+						.sweepInterpolator(mSettingsHelper.getProgressBarInterpolator())
+						.style(CircularProgressDrawable.Style.ROUNDED)
+						.build();
+						
+						progressBar.setIndeterminateDrawable(drawable);
+						
+						param.args[0] = drawable;
+							
 				}
 			}
 		});
