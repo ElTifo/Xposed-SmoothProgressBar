@@ -115,9 +115,11 @@ public class SettingsActivity extends Activity {
 		mSeekBarSectionsCount.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-				mSectionsCount = progress + 1;
 				mTextViewSectionsCount.setText(getString(R.string.sections_count, progress+1));
-				mProgressBar.setSmoothProgressDrawableSectionsCount(mSectionsCount);
+				if (fromUser) {
+					mSectionsCount = progress + 1;
+					mProgressBar.setSmoothProgressDrawableSectionsCount(mSectionsCount);
+				}
 			}
 
 			@Override
