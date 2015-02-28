@@ -1,10 +1,11 @@
 package com.mohammadag.smoothsystemprogressbars;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,26 +20,33 @@ import com.larswerkman.holocolorpicker.OpacityBar;
 import com.larswerkman.holocolorpicker.SaturationBar;
 import com.larswerkman.holocolorpicker.ValueBar;
 
-public class ColorPickerActivity extends Activity implements OnColorChangedListener {
+import com.mohammadag.smoothsystemprogressbars.MaterialRippleLayout;
+
+public class ColorPickerActivity extends ActionBarActivity implements OnColorChangedListener {
 
 	private EditText editText;
 	private String prefColor;
 	private int mPosition;
 
+	private Toolbar toolbar;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		
+		setContentView(R.layout.activity_color_picker);
+		
+		toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+		
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		
 		Bundle bundle = getIntent().getExtras();
 		String prefTitle = bundle.getString("title");
 		mPosition = bundle.getInt("position");
 		prefColor = bundle.getString("color");
 
 		setTitle(prefTitle);
-
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-
-		setContentView(R.layout.activity_color_picker);
 
 		final ColorPicker picker = (ColorPicker) findViewById(R.id.picker);
 		OpacityBar opacityBar = (OpacityBar) findViewById(R.id.opacitybar);
@@ -56,6 +64,15 @@ public class ColorPickerActivity extends Activity implements OnColorChangedListe
 		picker.setColor(Color.parseColor("#" + prefColor));
 
 		Button bPreview = (Button) findViewById(R.id.bPreviewColor);
+		
+		MaterialRippleLayout.on(bPreview)
+		.rippleBackground(Color.parseColor("#ff5a595b"))
+    	.rippleColor(Color.parseColor("#" + prefColor))	// color of ripple
+    	.rippleAlpha(0.5f)
+    	.rippleHover(true)
+    	.rippleOverlay(false)
+    	.create();
+		
 		bPreview.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -72,20 +89,28 @@ public class ColorPickerActivity extends Activity implements OnColorChangedListe
 
 					ColorDrawable previewDrawable = new ColorDrawable(colourHex);
 
-					getActionBar().setBackgroundDrawable(previewDrawable);
+					getSupportActionBar().setBackgroundDrawable(previewDrawable);
 
 					/* Workaround, there's no invalidate() method that would redraw the
 					 * action bar, and setting the drawable at runtime simply does nothing.
 					 */
-					getActionBar().setDisplayShowTitleEnabled(false);
-					getActionBar().setDisplayShowTitleEnabled(true);
+					getSupportActionBar().setDisplayShowTitleEnabled(false);
+					getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 				} catch (IllegalArgumentException e) {
 					Toast.makeText(getApplicationContext(), R.string.invalid_color, Toast.LENGTH_SHORT).show();
 				}
 			}
 		});
+		
 		Button bApply = (Button) findViewById(R.id.bApplyColor);
+		MaterialRippleLayout.on(bApply)
+		.rippleBackground(Color.parseColor("#ff5a595b"))
+    	.rippleColor(Color.parseColor("#" + prefColor))
+    	.rippleAlpha(0.5f)
+    	.rippleHover(true)
+    	.rippleOverlay(false)
+    	.create();
 		bApply.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -109,7 +134,7 @@ public class ColorPickerActivity extends Activity implements OnColorChangedListe
 		}
 		intent.putExtra("color", text);
 		//intent.putExtra("enabled", enabledSwitch.isChecked());
-		setResult(Activity.RESULT_OK, intent);
+		setResult(ActionBarActivity.RESULT_OK, intent);
 		finish();
 	}
 
@@ -142,7 +167,7 @@ public class ColorPickerActivity extends Activity implements OnColorChangedListe
 
 	@Override
 	public void onBackPressed() {
-		setResult(Activity.RESULT_CANCELED);
+		setResult(ActionBarActivity.RESULT_CANCELED);
 		super.onBackPressed();
 	}
 }

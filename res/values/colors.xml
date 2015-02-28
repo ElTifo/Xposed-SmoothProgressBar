@@ -14,6 +14,10 @@
         <item>@color/gplus_color_3</item>
         <item>@color/gplus_color_4</item>
     </integer-array>
+    
+    <color name="ColorPrimary">#009688</color>
+    <color name="ColorPrimaryDark">#00897B</color>
+    <color name="ColorAccent">#009688</color>
 
     <color name="gplus_color_1">#3e802f</color>
     <color name="gplus_color_2">#427fed</color>
@@ -26,6 +30,10 @@
     <color name="holo_purple_dark">#9933cc</color>
     <color name="holo_red_dark">#cc0000</color>
 
+    <color name="button_material_dark">#ff5a595b</color>
+    <color name="button_material_light">#ffd6d7d7</color>
+    
+    <color name="transparent">#00FFFFFF</color>
 	
 	<!--Material colors-->    
     <!-- Red -->

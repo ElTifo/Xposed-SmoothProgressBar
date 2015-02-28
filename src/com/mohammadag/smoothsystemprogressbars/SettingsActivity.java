@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,12 +28,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
+
 /*castorflex used these as well*/
 import com.mohammadag.smoothsystemprogressbars.CircularProgressBar;
 import com.mohammadag.smoothsystemprogressbars.CircularProgressDrawable;
 import com.mohammadag.smoothsystemprogressbars.SmoothProgressBar;
 
-public class SettingsActivity extends Activity {
+public class SettingsActivity extends ActionBarActivity {
 
 	private SmoothProgressBar mProgressBar;
 	private CircularProgressBar mCircularProgressBar;
@@ -56,12 +61,17 @@ public class SettingsActivity extends Activity {
 	private SettingsHelper mSettingsHelper;
 	protected int mColor = Color.parseColor("#33b5e5");
 	private ListView mColorsListView;
+	
+	private Toolbar toolbar; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_custom);
+		
+		toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
 
 		mSettingsHelper = new SettingsHelper(getApplicationContext());
 
@@ -346,7 +356,7 @@ public class SettingsActivity extends Activity {
 				dp, r.getDisplayMetrics());
 		return px;
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(android.view.Menu menu) {
 		getMenuInflater().inflate(R.menu.menu, menu);
@@ -363,9 +373,6 @@ public class SettingsActivity extends Activity {
 			mSettingsHelper.setReversed(mCheckBoxReversed.isChecked()).setProgressBarColor(mColor);
 			mSettingsHelper.setProgressBarInterpolator(mCurrentInterpolator);
 			Toast.makeText(this, getString(R.string.item_successfully_saved), Toast.LENGTH_SHORT).show();
-			return true;
-		case R.id.preview_item:
-			setValues();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mohammadag.smoothsystemprogressbars"
-    android:versionCode="9"
-    android:versionName="1.4.1" >
+    android:versionCode="10"
+    android:versionName="1.4.2" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -23,7 +23,7 @@
             android:name="xposeddescription"
             android:value="@string/xposed_description" />
 
-        <activity android:name=".SettingsActivity" >
+        <activity android:name=".SettingsActivity" android:screenOrientation="nosensor" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -31,7 +31,7 @@
                 <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
             </intent-filter>
         </activity>
-        <activity android:name=".ColorPickerActivity" />
+        <activity android:name=".ColorPickerActivity" android:screenOrientation="nosensor" />
     </application>
 
 </manifest>
