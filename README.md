@@ -6,6 +6,8 @@ Android Holo ColorPicker - https://github.com/LarsWerkman/HoloColorPicker
 
 SmoothProgressBar - https://github.com/castorflex/SmoothProgressBar
 
+Material-Rpple - https://github.com/balysv/material-ripple
+
 Module Description:
 
 This module allows android users, that already have rovo89's Xposed framework (https://github.com/rovo89) available on their equipment, to replace android's default Indeterminate Progress Bars by a fully customizable ones.
