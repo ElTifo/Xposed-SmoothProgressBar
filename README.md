@@ -16,4 +16,4 @@ The original module is available here -> https://github.com/MohammadAG/Xposed-Sm
 
 My goal was to update this module to include the new features available on castorflex's libraries (circular progress bar for e.g.).
 
-Check XDA for more info and module download -> http://forum.xda-developers.com/showpost.php?p=58921302&postcount=142
+Check XDA for more info and module download -> http://forum.xda-developers.com/xposed/modules/mod-smoother-indeterminate-progressbar-t2556752
