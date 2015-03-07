@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_action_bar_home_description">Перейти на главный экран</string>
+    <string name="abc_action_bar_up_description">Перейти вверх</string>
+    <string name="abc_action_menu_overflow_description">Другие параметры</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_searchview_description_search">Поиск</string>
+    <string name="abc_searchview_description_query">Поисковый запрос</string>
+    <string name="abc_searchview_description_clear">Удалить запрос</string>
+    <string name="abc_searchview_description_submit">Отправить запрос</string>
+    <string name="abc_searchview_description_voice">Голосовой поиск</string>
+    <string name="abc_activitychooserview_choose_application">Выбрать приложение</string>
+    <string name="abc_activity_chooser_view_see_all">Показать все</string>
+    <string name="abc_shareactionprovider_share_with_application">Открыть доступ пользователю %s</string>
+    <string name="abc_shareactionprovider_share_with">Открыть доступ</string>
+    <item type="string" name="cpb_default_sweep_speed">1.0</item>
+    <item type="string" name="cpb_default_rotation_speed">1.0</item>
+    <string name="app_name">Smooth System Progress Bars</string>
+    <string name="saturation">Насыщенность</string>
+    <string name="value">Затемнение</string>
+    <string name="opacity">Непрозрачность</string>
+    <string name="preview">Предросмотр</string>
+    <string name="restore">Восстановить</string>
+    <string name="save">Сохранить</string>
+    <string name="apply">Применить</string>
+    <string name="invalid_color">Неправильный цвет</string>
+    <string name="item_successfully_saved">Настройки успешно сохранены!</string>
+    <string name="scroll_down_hint">Прокрутите список, чтобы добавить больше цветов</string>
+    <string name="reversed">Развернуть</string>
+    <string name="mirror_mode">Режим зеркала</string>
+    <string name="speed">Скорость: %s</string>
+    <string name="stroke_width">Высота черты: %ddp</string>
+    <string name="separator_length">Длина разделителя: %ddp</string>
+    <string name="sections_count">Количество секций : %s</string>
+    <string name="interpolator">Интерполятор:</string>
+    <string name="xposed_description">Заменяет ProgressBar с более плавным реализацией</string>
+    <string name="tap_to_add">Нажмите, чтобы добавить цвет</string>
+    <string name="tap_to_change">Нажмите, чтобы изменить цвет</string>
+    <string name="hold_to_revert">Нажмите, чтобы изменить или удерживайте, чтобы установить цвета по умолчанию</string>
+    <string name="hold_to_delete">Нажмите и удерживайте для удаления</string>
+</resources>
