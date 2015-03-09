@@ -24,7 +24,7 @@
     <string name="reversed">Ao contrário</string>
     <string name="mirror_mode">Modo espelho</string>
     <string name="speed">Velocidade: %s</string>
-    <string name="stroke_width">Grossura: %ddp</string>
+    <string name="stroke_width">Espessura: %ddp</string>
     <string name="separator_length">Separador: %ddp</string>
     <string name="sections_count">Secções: %s</string>
     <string name="interpolator">Interpolador:</string>
