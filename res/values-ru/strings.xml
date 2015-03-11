@@ -36,7 +36,7 @@
     <string name="separator_length">Длина разделителя: %ddp</string>
     <string name="sections_count">Количество секций : %s</string>
     <string name="interpolator">Интерполятор:</string>
-    <string name="xposed_description">Заменяет ProgressBar с более плавным реализацией</string>
+    <string name="xposed_description">Заменяет ProgressBar с более плавной реализацией</string>
     <string name="tap_to_add">Нажмите, чтобы добавить цвет</string>
     <string name="tap_to_change">Нажмите, чтобы изменить цвет</string>
     <string name="hold_to_revert">Нажмите, чтобы изменить или удерживайте, чтобы установить цвета по умолчанию</string>
