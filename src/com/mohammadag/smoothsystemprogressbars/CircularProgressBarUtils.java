@@ -8,6 +8,7 @@ import static java.lang.Math.min;
  * Created by castorflex on 8/14/14.
  */
 class CircularProgressBarUtils {
+
   private CircularProgressBarUtils() {
   }
 
@@ -32,7 +33,7 @@ class CircularProgressBarUtils {
   }
 
   static void checkPositive(int number, String name){
-    if(number <= 0)
+    if (number <= 0)
       throw new IllegalArgumentException(String.format("%s must not be null", name));
   }
 
@@ -42,9 +43,8 @@ class CircularProgressBarUtils {
   }
 
   static float getAnimatedFraction(ValueAnimator animator) {
-    float fraction = animator.getDuration() > 0 ? ((float) animator.getCurrentPlayTime()) / animator.getDuration() : 1f;
+    float fraction = animator.getDuration() > 0 ? ((float) animator.getCurrentPlayTime()) / animator.getDuration() : 0f;
 
-    fraction %= 1f;
     fraction = min(fraction, 1f);
     fraction = animator.getInterpolator().getInterpolation(fraction);
     return fraction;

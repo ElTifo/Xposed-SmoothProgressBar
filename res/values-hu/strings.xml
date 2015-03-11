@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smooth Rendszer Folyamatjelző</string>
+    <string name="saturation">Telítettség</string>
+    <string name="value">Érték</string>
+    <string name="opacity">Homályosság</string>
+    <string name="preview">Előnézet</string>
+    <string name="restore">Visszaállít</string>
+    <string name="save">Mentés</string>
+    <string name="apply">Alkalmaz</string>
+    <string name="invalid_color">Érvénytelen szín</string>
+    <string name="item_successfully_saved">Sikeres mentés!</string>
+    <string name="scroll_down_hint">Gördítse a listát több szín hozzáadásához</string>
+    <string name="reversed">Fordított</string>
+    <string name="mirror_mode">Tükrözött</string>
+    <string name="speed">Sebesség: %s</string>
+    <string name="stroke_width">Körvonalak szélessége: %ddp</string>
+    <string name="separator_length">Elválasztó hossza: %ddp</string>
+    <string name="sections_count">Szakaszok száma: %s</string>
+    <string name="interpolator">Interpolátor:</string>
+    <string name="xposed_description">Helyettesíti a Folyamatsávot és a gördülékenyebb végrehajtást</string>
+    <string name="tap_to_add">Szín hozzáadása</string>
+    <string name="tap_to_change">Szín módosítása</string>
+    <string name="hold_to_revert">Érintéssel módosítja, hosszan nyomva alapértelmezett szín</string>
+    <string name="hold_to_delete">Érintéssel módosítja, hosszan nyomva törölheti</string>
+	<string name="abc_toolbar_collapse_description">Összeomlás</string>
+</resources>

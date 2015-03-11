@@ -16,12 +16,13 @@ import android.graphics.drawable.Drawable;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
+
 import static com.mohammadag.smoothsystemprogressbars.CircularProgressBarUtils.checkAngle;
-import static com.mohammadag.smoothsystemprogressbars.CircularProgressBarUtils.getAnimatedFraction;
 import static com.mohammadag.smoothsystemprogressbars.CircularProgressBarUtils.checkColors;
 import static com.mohammadag.smoothsystemprogressbars.CircularProgressBarUtils.checkNotNull;
 import static com.mohammadag.smoothsystemprogressbars.CircularProgressBarUtils.checkPositiveOrZero;
 import static com.mohammadag.smoothsystemprogressbars.CircularProgressBarUtils.checkSpeed;
+import static com.mohammadag.smoothsystemprogressbars.CircularProgressBarUtils.getAnimatedFraction;
 
 /**
  * Created by castorflex on 11/10/13.
