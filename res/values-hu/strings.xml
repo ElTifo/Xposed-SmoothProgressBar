@@ -13,6 +13,7 @@
     <string name="scroll_down_hint">Gördítse a listát több szín hozzáadásához</string>
     <string name="reversed">Fordított</string>
     <string name="mirror_mode">Tükrözött</string>
+    <string name="gradients">Színátmenetek</string>
     <string name="speed">Sebesség: %s</string>
     <string name="stroke_width">Körvonalak szélessége: %ddp</string>
     <string name="separator_length">Elválasztó hossza: %ddp</string>

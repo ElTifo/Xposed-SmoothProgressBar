@@ -52,6 +52,7 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit, IXposedHookInitP
 					.speed(mSettingsHelper.getSpeed())
 					.mirrorMode(mSettingsHelper.getMirrored())
 					.reversed(mSettingsHelper.getReversed())
+					.gradients(mSettingsHelper.getGradients())
 					.colors(mSettingsHelper.getProgressBarColors())
 					.build();
 					

@@ -29,6 +29,7 @@ public class SettingsHelper {
 	private static final String KEY_INTERPOLATOR = "progress_bar_interpolator";
 	private static final String KEY_MIRRORED = "progress_bar_mirrored";
 	private static final String KEY_REVERSED = "progress_bar_reversed";
+	private static final String KEY_GRADIENTS = "progress_bar_gradients";
 
 	public static final int INTERPOLATOR_ACCELERATE = 0;
 	public static final int INTERPOLATOR_LINEAR = 1;
@@ -150,6 +151,15 @@ public class SettingsHelper {
 
 	public SettingsHelper setReversed(boolean value) {
 		mPreferences.edit().putBoolean(KEY_REVERSED, value).commit();
+		return this;
+	}
+	
+	public boolean getGradients() {
+		return getBoolean(KEY_GRADIENTS, false);
+	}
+
+	public SettingsHelper setGradients(boolean value) {
+		mPreferences.edit().putBoolean(KEY_GRADIENTS, value).commit();
 		return this;
 	}
 

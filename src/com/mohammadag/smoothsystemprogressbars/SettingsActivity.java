@@ -42,6 +42,7 @@ public class SettingsActivity extends ActionBarActivity {
 	private CircularProgressBar mCircularProgressBar;
 	private CheckBox mCheckBoxMirror;
 	private CheckBox mCheckBoxReversed;
+	private CheckBox mCheckBoxGradients;
 	private Spinner mSpinnerInterpolators;
 	private SeekBar mSeekBarSectionsCount;
 	private SeekBar mSeekBarStrokeWidth;
@@ -79,6 +80,7 @@ public class SettingsActivity extends ActionBarActivity {
 		mCircularProgressBar = (CircularProgressBar) findViewById(R.id.progressbar_circular);
 		mCheckBoxMirror = (CheckBox) findViewById(R.id.checkbox_mirror);
 		mCheckBoxReversed = (CheckBox) findViewById(R.id.checkbox_reversed);
+		mCheckBoxGradients = (CheckBox) findViewById(R.id.checkbox_gradients);
 		mSpinnerInterpolators = (Spinner) findViewById(R.id.spinner_interpolator);
 		mSeekBarSectionsCount = (SeekBar) findViewById(R.id.seekbar_sections_count);
 		mSeekBarStrokeWidth = (SeekBar) findViewById(R.id.seekbar_stroke_width);
@@ -101,6 +103,7 @@ public class SettingsActivity extends ActionBarActivity {
 		
 		mCheckBoxMirror.setOnClickListener(checkboxListener);
 		mCheckBoxReversed.setOnClickListener(checkboxListener);
+		mCheckBoxGradients.setOnClickListener(checkboxListener);
 		
 		mSeekBarSpeed.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 			@Override
@@ -187,6 +190,7 @@ public class SettingsActivity extends ActionBarActivity {
 		mSeekBarStrokeWidth.setProgress((int)mSettingsHelper.getStrokeWidth());
 		mCheckBoxMirror.setChecked(mSettingsHelper.getMirrored());
 		mCheckBoxReversed.setChecked(mSettingsHelper.getReversed());
+		mCheckBoxGradients.setChecked(mSettingsHelper.getGradients());
 		mSpeed = mSettingsHelper.getSpeed();
 		mSeekBarSpeed.setProgress((int)(mSpeed * 10) - 1);
 		mTextViewSpeed.setText(getString(R.string.speed, mSpeed));
@@ -305,6 +309,7 @@ public class SettingsActivity extends ActionBarActivity {
 	private void setValues() {
 		mProgressBar.setSmoothProgressDrawableReversed(mCheckBoxReversed.isChecked());
 		mProgressBar.setSmoothProgressDrawableMirrorMode(mCheckBoxMirror.isChecked());
+		mProgressBar.setSmoothProgressDrawableUseGradients(mCheckBoxGradients.isChecked());
 
 		switch (mSpinnerInterpolators.getSelectedItemPosition()) {
 		case 1:
@@ -371,6 +376,7 @@ public class SettingsActivity extends ActionBarActivity {
 			mSettingsHelper.setSpeed(mSpeed).setSectionCount(mSectionsCount).setStrokeWidth(mStrokeWidth);
 			mSettingsHelper.setProgressSeparatorLength(mSeparatorLength).setMirrored(mCheckBoxMirror.isChecked());
 			mSettingsHelper.setReversed(mCheckBoxReversed.isChecked()).setProgressBarColor(mColor);
+			mSettingsHelper.setGradients(mCheckBoxGradients.isChecked());
 			mSettingsHelper.setProgressBarInterpolator(mCurrentInterpolator);
 			Toast.makeText(this, getString(R.string.item_successfully_saved), Toast.LENGTH_SHORT).show();
 			return true;

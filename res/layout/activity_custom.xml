@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    android:orientation="vertical" 
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:weightSum="1" >
     
     <include android:id="@+id/tool_bar" layout="@layout/tool_bar" ></include>
@@ -50,21 +51,33 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal" >
 
             <CheckBox
                 android:id="@+id/checkbox_reversed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="13sp"
                 android:text="@string/reversed" />
 
             <CheckBox
                 android:id="@+id/checkbox_mirror"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="1.05"
+                android:textSize="13sp"
                 android:text="@string/mirror_mode" />
+            
+            <CheckBox
+                    android:id="@+id/checkbox_gradients"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:textSize="13sp"
+                    android:text="@string/gradients" />
         </LinearLayout>
 		
         <ScrollView

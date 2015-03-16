@@ -31,6 +31,7 @@
     <string name="scroll_down_hint">Прокрутите список, чтобы добавить больше цветов</string>
     <string name="reversed">Развернуть</string>
     <string name="mirror_mode">Режим зеркала</string>
+    <string name="gradients">градиенты</string>
     <string name="speed">Скорость: %s</string>
     <string name="stroke_width">Высота черты: %ddp</string>
     <string name="separator_length">Длина разделителя: %ddp</string>

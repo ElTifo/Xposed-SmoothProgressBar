@@ -23,6 +23,7 @@
     <string name="scroll_down_hint">Scroll down the list to add more colors</string>
     <string name="reversed">Reversed</string>
     <string name="mirror_mode">Mirror mode</string>
+    <string name="gradients">Gradients</string>
     <string name="speed">Speed: %s</string>
     <string name="stroke_width">Stroke width: %ddp</string>
     <string name="separator_length">Separator length: %ddp</string>
