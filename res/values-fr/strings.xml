@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Barres de Progression Système</string>
+    <string name="app_name">Barres de Progression Système</string>
     
     <string-array name="interpolators">
         <item>Accélérer</item>
@@ -23,7 +23,7 @@
     <string name="scroll_down_hint">Faites défiler la liste pour ajouter plus de couleurs</string>
     <string name="reversed">Inversé</string>
     <string name="mirror_mode">Mode miroir</string>
-    <string name="gradients">Gradients</string>
+    <string name="gradients">Dégradé</string>
     <string name="speed">Vitesse : %s</string>
     <string name="stroke_width">Largeur de trait : %ddp</string>
     <string name="separator_length">Longueur de séparation : %ddp</string>
