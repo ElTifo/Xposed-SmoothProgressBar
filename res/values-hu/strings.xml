@@ -25,4 +25,17 @@
     <string name="hold_to_revert">Érintéssel módosítja, hosszan nyomva alapértelmezett szín</string>
     <string name="hold_to_delete">Érintéssel módosítja, hosszan nyomva törölheti</string>
 	<string name="abc_toolbar_collapse_description">Összeomlás</string>
+	
+	<!-- Settings -->
+	
+	<string name="prefs">Beállítások</string>
+	<string name="general_prefs">Beállítások</string>
+	<string name="pref_enable_horizontal_title">Vízszintes MOD</string>
+	<string name="pref_enable_horizontal_summary">Engedélyezze vagy tiltsa le a vízszintes egyéni progress bar</string>
+	<string name="pref_enable_circular_title">Kör alakú MOD</string>
+	<string name="pref_enable_circular_summary">Engedélyezése vagy tiltása körkörös egyéni progress bar</string>
+	<string name="pref_hide_launcher_icon_title">Indító ikon elrejtése</string>
+    <string name="pref_hide_launcher_icon_summary">Szükséges lehet a launcher újraindítása</string>
+    <string name="reboot_required">A változtatás csak újraindítás után lesz alkalmazva</string>
+	
 </resources>

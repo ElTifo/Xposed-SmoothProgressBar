@@ -34,5 +34,17 @@
     <string name="tap_to_change">Toccare per cambiare il colore</string>
     <string name="hold_to_revert">Toccare per cambiare o tenere premuto per impostare il colore di default</string>
     <string name="hold_to_delete">Toccare per cambiare o tenere premuto per eliminare il colore</string>
+    
+    <!-- Settings -->
+	
+	<string name="prefs">Impostazioni</string>
+	<string name="general_prefs">Impostazioni</string>
+	<string name="pref_enable_horizontal_title">MOD Orizzontale</string>
+	<string name="pref_enable_horizontal_summary">Attivare o disattivare la barra di avanzamento orizzontale personalizzata</string>
+	<string name="pref_enable_circular_title">MOD Circolare</string>
+	<string name="pref_enable_circular_summary">Attivare o disattivare la barra di avanzamento circolare personalizzata</string>
+	<string name="pref_hide_launcher_icon_title">Nascondi icona launcher</string>
+    <string name="pref_hide_launcher_icon_summary">Potrebbe richiedere il riavvio del launcher</string>
+    <string name="reboot_required">Le modifiche saranno applicate dopo il riavvio</string>
 
 </resources>

@@ -1,5 +1,7 @@
 package com.mohammadag.smoothsystemprogressbars;
 
+import java.lang.reflect.Method;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -7,10 +9,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -27,6 +31,7 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 
 
@@ -380,7 +385,35 @@ public class SettingsActivity extends ActionBarActivity {
 			mSettingsHelper.setProgressBarInterpolator(mCurrentInterpolator);
 			Toast.makeText(this, getString(R.string.item_successfully_saved), Toast.LENGTH_SHORT).show();
 			return true;
+		case R.id.prefs:
+			Intent intent = new Intent(this, SmoothSystemPrefs.class);
+            startActivity(intent);
+            return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	/* Show overflow menu icons*/
+	@Override
+	public boolean onMenuOpened(int featureId, android.view.Menu menu)
+	{
+	    if(featureId == Window.FEATURE_ACTION_BAR && menu != null){
+	        if(menu.getClass().getSimpleName().equals("MenuBuilder")){
+	            try{
+	                Method m = menu.getClass().getDeclaredMethod(
+	                    "setOptionalIconsVisible", Boolean.TYPE);
+	                m.setAccessible(true);
+	                m.invoke(menu, true);
+	            }
+	            catch(NoSuchMethodException e){
+	                String TAG = null;
+					Log.e(TAG, "onMenuOpened", e);
+	            }
+	            catch(Exception e){
+	                throw new RuntimeException(e);
+	            }
+	        }
+	    }
+	    return super.onMenuOpened(featureId, menu);
 	}
 }

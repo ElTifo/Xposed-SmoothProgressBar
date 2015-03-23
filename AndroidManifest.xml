@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mohammadag.smoothsystemprogressbars"
-    android:versionCode="13"
-    android:versionName="1.4.5" >
+    android:versionCode="14"
+    android:versionName="1.4.6" >
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
     <application
         android:allowBackup="true"
@@ -23,15 +23,23 @@
             android:name="xposeddescription"
             android:value="@string/xposed_description" />
 
-        <activity android:name=".SettingsActivity" android:screenOrientation="nosensor" >
+        <activity android:name="com.mohammadag.smoothsystemprogressbars.SettingsActivity" android:screenOrientation="nosensor" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
             </intent-filter>
         </activity>
-        <activity android:name=".ColorPickerActivity" android:screenOrientation="nosensor" />
+        <activity-alias android:name="com.mohammadag.smoothsystemprogressbars.SettingsActivityAlias" 
+            android:screenOrientation="nosensor" 
+            android:enabled="true"
+            android:targetActivity="com.mohammadag.smoothsystemprogressbars.SettingsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.mohammadag.smoothsystemprogressbars.ColorPickerActivity" android:screenOrientation="nosensor" />
+        <activity android:name="com.mohammadag.smoothsystemprogressbars.SmoothSystemPrefs" android:screenOrientation="nosensor" />
     </application>
 
 </manifest>

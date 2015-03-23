@@ -34,5 +34,17 @@
     <string name="tap_to_change">Toque para alterar</string>
     <string name="hold_to_revert">Toque para alterar ou pressione para restaurar a cor por defeito</string>
     <string name="hold_to_delete">Toque para alterar ou pressione para remover</string>
+    
+    <!-- Settings -->
+	
+	<string name="prefs">Definições</string>
+	<string name="general_prefs">Definições</string>
+	<string name="pref_enable_horizontal_title">MOD Horizontal</string>
+	<string name="pref_enable_horizontal_summary">Ativar ou desativar a barra de progresso horizontal personalizada</string>
+	<string name="pref_enable_circular_title">MOD Circular</string>
+	<string name="pref_enable_circular_summary">Ativar ou desativar a barra de progresso circular personalizada</string>
+	<string name="pref_hide_launcher_icon_title">Ocultar ícone no inicializador</string>
+    <string name="pref_hide_launcher_icon_summary">Poderá ser necessário reiniciar o inicializador</string>
+    <string name="reboot_required">As alterações serão aplicadas após reiniciar o sistema</string>
 
 </resources>

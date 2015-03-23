@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    
-
+    <PreferenceCategory android:title="@string/general_prefs" >
+        <CheckBoxPreference
+            android:key="pref_enable_horizontal"
+            android:title="@string/pref_enable_horizontal_title"
+            android:summary="@string/pref_enable_horizontal_summary"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_enable_circular"
+            android:title="@string/pref_enable_circular_title"
+            android:summary="@string/pref_enable_circular_summary"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_hide_launcher_icon"
+            android:title="@string/pref_hide_launcher_icon_title"
+            android:summary="@string/pref_hide_launcher_icon_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>

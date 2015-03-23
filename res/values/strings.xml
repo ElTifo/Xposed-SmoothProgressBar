@@ -34,5 +34,17 @@
     <string name="tap_to_change">Tap to change color</string>
     <string name="hold_to_revert">Tap to change or hold to set default color</string>
     <string name="hold_to_delete">Tap to change or hold to delete</string>
-
+    
+    <!-- Settings -->
+	
+	<string name="prefs">Settings</string>
+	<string name="general_prefs">Settings</string>
+	<string name="pref_enable_horizontal_title">Horizontal MOD</string>
+	<string name="pref_enable_horizontal_summary">Enable or disable the horizontal custom progress bar</string>
+	<string name="pref_enable_circular_title">Circular MOD</string>
+	<string name="pref_enable_circular_summary">Enable or disable the circular custom progress bar</string>
+	<string name="pref_hide_launcher_icon_title">Hide launcher icon</string>
+    <string name="pref_hide_launcher_icon_summary">May require launcher restart</string>
+    <string name="reboot_required">Change will be applied after reboot</string>
+	
 </resources>

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto" > 
-    
+	
     <item 
         android:id="@+id/save_item" 
         android:title="@string/save" 
-        android:icon="@drawable/ic_action_save" 
-        app:showAsAction="always">
+        android:icon="@drawable/ab_action_save" 
+        android:showAsAction="ifRoom">
         
+    </item>
+    
+    <item 
+        android:id="@+id/prefs" 
+        android:title="@string/prefs" 
+		android:icon="@drawable/ab_action_settings" 
+        android:showAsAction="always">
     </item>
 
 </menu>
