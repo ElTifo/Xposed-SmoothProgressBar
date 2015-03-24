@@ -48,10 +48,10 @@
 	<string name="prefs">Настройки</string>
 	<string name="general_prefs">Настройки</string>
 	<string name="pref_enable_horizontal_title">Горизонтальный MOD</string>
-	<string name="pref_enable_horizontal_summary">Включить или отключить горизонтальную полосу обычай ходе</string>
+	<string name="pref_enable_horizontal_summary">Включить или отключить модифицированную горизонтальную полосу загрузки</string>
 	<string name="pref_enable_circular_title">Круговой MOD</string>
-	<string name="pref_enable_circular_summary">Включить или отключить круглой барной стойкой на заказ ходе</string>
-	<string name="pref_hide_launcher_icon_title">Скрыть значок из меню</string>
+	<string name="pref_enable_circular_summary">Включить или отключить круглую модифицированную полосу загрузки</string>
+	<string name="pref_hide_launcher_icon_title">Скрыть значок из лончера</string>
     <string name="pref_hide_launcher_icon_summary">Может потребоваться перезапуск лончера</string>
     <string name="reboot_required">Изменения вступят в силу после перезагрузки</string>
     
