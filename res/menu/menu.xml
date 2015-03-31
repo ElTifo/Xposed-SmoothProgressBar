@@ -5,7 +5,7 @@
     <item 
         android:id="@+id/save_item" 
         android:title="@string/save" 
-        android:icon="@drawable/ab_action_save" 
+        android:icon="@drawable/ic_content_save" 
         android:showAsAction="ifRoom">
         
     </item>
@@ -13,7 +13,7 @@
     <item 
         android:id="@+id/prefs" 
         android:title="@string/prefs" 
-		android:icon="@drawable/ab_action_settings" 
+		android:icon="@drawable/ic_settings" 
         android:showAsAction="always">
     </item>
 

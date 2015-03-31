@@ -43,7 +43,7 @@ public class ColorPickerActivity extends ActionBarActivity implements OnColorCha
 		
 		Bundle bundle = getIntent().getExtras();
 		String prefTitle = bundle.getString("title");
-		mPosition = bundle.getInt("position");
+		mPosition = bundle.getInt("key");
 		prefColor = bundle.getString("color");
 
 		setTitle(prefTitle);
@@ -59,7 +59,7 @@ public class ColorPickerActivity extends ActionBarActivity implements OnColorCha
 
 		editText = (EditText) findViewById(R.id.edittext);
 
-		picker.setOldCenterColor(Color.parseColor("#ff33b5e5"));
+		picker.setOldCenterColor(Color.parseColor("#" + prefColor));
 		picker.setOnColorChangedListener(this);
 		picker.setColor(Color.parseColor("#" + prefColor));
 
@@ -115,7 +115,21 @@ public class ColorPickerActivity extends ActionBarActivity implements OnColorCha
 
 			@Override
 			public void onClick(View v) {
-				returnResults();
+				try {
+					String textEditString = editText.getText().toString();
+					int colourHex;
+					if (isFullyTransparent(textEditString)) {
+						colourHex = Color.parseColor("#00000000");
+					} else {
+						colourHex = Color.parseColor("#" + textEditString);
+						picker.setColor(colourHex);
+					}
+
+					returnResults();
+
+				} catch (IllegalArgumentException e) {
+					Toast.makeText(getApplicationContext(), R.string.invalid_color, Toast.LENGTH_SHORT).show();
+				}
 			}
 		});
 	}
@@ -125,17 +139,22 @@ public class ColorPickerActivity extends ActionBarActivity implements OnColorCha
 	}
 
 	private void returnResults() {
-		String text = editText.getText().toString();
-
-		Intent intent = new Intent();
-		intent.putExtra("position", mPosition);
-		if (isFullyTransparent(text)) {
-			text = "00000000";
+		try {
+			String text = editText.getText().toString();
+	
+			Intent intent = new Intent();
+			intent.putExtra("key", mPosition);
+			if (isFullyTransparent(text)) {
+				text = "00000000";
+			}
+			intent.putExtra("color", text);
+			//intent.putExtra("enabled", enabledSwitch.isChecked());
+			
+			setResult(ActionBarActivity.RESULT_OK, intent);
+			finish();
+		} catch (IllegalArgumentException e) {
+			Toast.makeText(getApplicationContext(), R.string.invalid_color, Toast.LENGTH_SHORT).show();
 		}
-		intent.putExtra("color", text);
-		//intent.putExtra("enabled", enabledSwitch.isChecked());
-		setResult(ActionBarActivity.RESULT_OK, intent);
-		finish();
 	}
 
 	private void updateEdittext(String color) {

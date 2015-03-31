@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <animation-list  xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+            <item android:duration="10">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_015_light" />
+            </item>		
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_000_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_001_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_002_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_003_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_004_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_005_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_006_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_007_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_008_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_009_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_010_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_011_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_012_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_013_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_014_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:src="@drawable/btn_check_to_off_mtrl_015_light" />
+            </item>
+        </animation-list>

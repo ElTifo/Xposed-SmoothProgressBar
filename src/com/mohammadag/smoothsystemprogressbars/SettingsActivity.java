@@ -32,10 +32,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
-
-
 /*castorflex used these as well*/
 import com.mohammadag.smoothsystemprogressbars.CircularProgressBar;
 import com.mohammadag.smoothsystemprogressbars.CircularProgressDrawable;
@@ -229,7 +225,7 @@ public class SettingsActivity extends ActionBarActivity {
 
 		mColorsListView.setOnItemLongClickListener(new OnItemLongClickListener() {
 			@Override
-			public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+			public boolean onItemLongClick(AdapterView<?> parent, View arg1, int position, long arg3) {
 				int[] colors = mSettingsHelper.getProgressBarColors();
 				if (position >= colors.length)
 					return true;
@@ -249,7 +245,6 @@ public class SettingsActivity extends ActionBarActivity {
 				}
 
 				mSettingsHelper.setProgressBarColors(colorsNew);
-				((ColorArrayAdapter) mColorsListView.getAdapter()).notifyDataSetChanged();
 				
 				setValues();
 				
@@ -278,13 +273,16 @@ public class SettingsActivity extends ActionBarActivity {
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		
 		if (resultCode == Activity.RESULT_CANCELED)
 			return;
-
-		String color = "#" + data.getStringExtra("color");
+		
 		int position = requestCode;
 
 		int[] colors = mSettingsHelper.getProgressBarColors();
+		
+		String color = "#" + data.getStringExtra("color");
+
 		if (position >= colors.length) {
 			int[] colorsNew = new int[position+1];
 			for (int i = 0; i < colors.length; i++) {
@@ -297,10 +295,11 @@ public class SettingsActivity extends ActionBarActivity {
 		}
 
 		mSettingsHelper.setProgressBarColors(colors);
-		((ColorArrayAdapter) mColorsListView.getAdapter()).notifyDataSetChanged();
 		
 		setValues();
+		
 		super.onActivityResult(requestCode, resultCode, data);
+		
 	}
 
 	public Integer getItem(int position) {
@@ -312,6 +311,7 @@ public class SettingsActivity extends ActionBarActivity {
 	}
 	
 	private void setValues() {
+		((ColorArrayAdapter) mColorsListView.getAdapter()).notifyDataSetChanged();
 		mProgressBar.setSmoothProgressDrawableReversed(mCheckBoxReversed.isChecked());
 		mProgressBar.setSmoothProgressDrawableMirrorMode(mCheckBoxMirror.isChecked());
 		mProgressBar.setSmoothProgressDrawableUseGradients(mCheckBoxGradients.isChecked());

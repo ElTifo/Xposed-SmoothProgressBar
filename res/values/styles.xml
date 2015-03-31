@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
         <item name="colorAccent">@color/ColorAccent</item>
         <item name="android:seekBarStyle">@style/Widget.Custom.SeekBar</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_dark</item>
     </style>
 	
     <style name="Widget.Custom.SeekBar" parent="@android:style/Widget.Holo">
@@ -20,6 +21,14 @@
         <item name="android:thumbOffset">16.0dip</item>
         <item name="android:paddingLeft">16.0dip</item>
         <item name="android:paddingRight">16.0dip</item>
+    </style>
+    
+    <style name="Theme.Prefs" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="colorAccent">@color/ColorAccent</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_light</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
     </style>
     
 </resources>
