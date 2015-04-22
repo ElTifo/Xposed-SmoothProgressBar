@@ -30,7 +30,7 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit, IXposedHookInitP
 
 		XposedHelpers.findAndHookMethod(ProgressBar.class, "setIndeterminateDrawable", Drawable.class, new XC_MethodHook() {
 			@Override
-			protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+			protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
 				
 				Drawable b = (Drawable) param.args[0];
 				if (b == null)
@@ -70,19 +70,18 @@ public class SmoothSystemPBar implements IXposedHookZygoteInit, IXposedHookInitP
 	            if (circular){
 					if ("android.graphics.drawable.LayerDrawable".equals(b.getClass().getName()) || 
 						"android.graphics.drawable.AnimatedRotateDrawable".equals(b.getClass().getName())) {
-						Drawable drawable = new CircularProgressDrawable.Builder(progressBar.getContext())
-						.colors(mSettingsHelper.getProgressBarColors())
-						.strokeWidth(mSettingsHelper.getStrokeWidth(scale))
-						.sweepSpeed(mSettingsHelper.getSpeed())
-						.rotationSpeed(mSettingsHelper.getSpeed())
-						.sweepInterpolator(mSettingsHelper.getProgressBarInterpolator())
-						.style(CircularProgressDrawable.Style.ROUNDED)
-						.build();
-						
-						progressBar.setIndeterminateDrawable(drawable);
-						
-						param.args[0] = drawable;
+							Drawable drawable = new CircularProgressDrawable.Builder(progressBar.getContext())
+							.colors(mSettingsHelper.getCircularBarColors())
+							.strokeWidth(mSettingsHelper.getCStrokeWidth(scale))
+							.sweepSpeed(mSettingsHelper.getCSpeed())
+							.rotationSpeed(mSettingsHelper.getCSpeed())
+							.sweepInterpolator(mSettingsHelper.getCircularBarInterpolator())
+							.style(mSettingsHelper.getStyle())
+							.build();
 							
+							progressBar.setIndeterminateDrawable(drawable);
+							
+							param.args[0] = drawable;	
 					}
 				}
 			}

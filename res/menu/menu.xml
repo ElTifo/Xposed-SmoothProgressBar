@@ -5,16 +5,9 @@
     <item 
         android:id="@+id/save_item" 
         android:title="@string/save" 
-        android:icon="@drawable/ic_content_save" 
-        android:showAsAction="ifRoom">
+        android:icon="@drawable/ic_save" 
+        app:showAsAction="always">
         
-    </item>
-    
-    <item 
-        android:id="@+id/prefs" 
-        android:title="@string/prefs" 
-		android:icon="@drawable/ic_settings" 
-        android:showAsAction="always">
     </item>
 
 </menu>

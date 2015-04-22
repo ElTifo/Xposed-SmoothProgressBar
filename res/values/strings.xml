@@ -9,6 +9,11 @@
         <item>AccelerateDecelerate</item>
         <item>Decelerate</item>
     </string-array>
+    
+    <string-array name="circular_style">
+        <item>Rounded</item>
+        <item>Normal</item>
+    </string-array>
 
     <string name="saturation">Saturation</string>
     <string name="value">Value</string>
@@ -25,10 +30,12 @@
     <string name="mirror_mode">Mirror mode</string>
     <string name="gradients">Gradients</string>
     <string name="speed">Speed: %s</string>
+    <string name="factor">Speed factor: %s</string>
     <string name="stroke_width">Stroke width: %ddp</string>
     <string name="separator_length">Separator length: %ddp</string>
     <string name="sections_count">Sections count: %s</string>
     <string name="interpolator">Interpolator:</string>
+    <string name="c_style">Style:</string>
     <string name="xposed_description">Replaces ProgressBar with a smoother implementation</string>
     <string name="tap_to_add">Tap to add color</string>
     <string name="tap_to_change">Tap to change color</string>
@@ -46,5 +53,12 @@
 	<string name="pref_hide_launcher_icon_title">Hide launcher icon</string>
     <string name="pref_hide_launcher_icon_summary">May require launcher restart</string>
     <string name="reboot_required">Change will be applied after reboot</string>
+    
+    <!-- Navigation Drawer -->
+    
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="support">Help and feedback</string>
+    <string name="donate">Donate</string>
 	
 </resources>

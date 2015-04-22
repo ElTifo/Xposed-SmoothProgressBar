@@ -9,6 +9,11 @@
         <item>AcelerarDesacelerar</item>
         <item>Desacelerar</item>
     </string-array>
+    
+    <string-array name="circular_style">
+        <item>Arredondado</item>
+        <item>Normal</item>
+    </string-array>
 
     <string name="saturation">Saturação</string>
     <string name="value">Valor</string>
@@ -25,10 +30,12 @@
     <string name="mirror_mode">Modo espelho</string>
     <string name="gradients">Gradientes</string>
     <string name="speed">Velocidade: %s</string>
+    <string name="factor">Fator de velocidade: %s</string>
     <string name="stroke_width">Espessura: %ddp</string>
     <string name="separator_length">Separador: %ddp</string>
     <string name="sections_count">Secções: %s</string>
     <string name="interpolator">Interpolador:</string>
+    <string name="c_style">Estilo:</string>
     <string name="xposed_description">Substitui as barras de progresso originais por umas personalizadas e com movimentos suaves</string>
     <string name="tap_to_add">Toque para adicionar uma cor</string>
     <string name="tap_to_change">Toque para alterar</string>
@@ -46,5 +53,12 @@
 	<string name="pref_hide_launcher_icon_title">Ocultar ícone no inicializador</string>
     <string name="pref_hide_launcher_icon_summary">Poderá ser necessário reiniciar o inicializador</string>
     <string name="reboot_required">As alterações serão aplicadas após reiniciar o sistema</string>
+    
+    <!-- Navigation Drawer -->
+    
+    <string name="drawer_open">Menu aberto</string>
+    <string name="drawer_close">Menu fechado</string>
+    <string name="support">Ajuda e comentários</string>
+    <string name="donate">Doar</string>
 
 </resources>

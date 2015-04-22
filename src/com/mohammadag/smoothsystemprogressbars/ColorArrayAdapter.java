@@ -20,7 +20,7 @@ public class ColorArrayAdapter extends ArrayAdapter<Integer> {
 
 	@Override
 	public int getCount() {
-		return mSettingsHelper.getProgressBarColors().length + 1;
+		return mSettingsHelper.getProgressBarColors().length+1;
 	}
 
 	@Override
@@ -54,7 +54,7 @@ public class ColorArrayAdapter extends ArrayAdapter<Integer> {
 		} else {
 			textView.setText(R.string.hold_to_delete);
 		}
-
+		
 		return v;
 	}
 }

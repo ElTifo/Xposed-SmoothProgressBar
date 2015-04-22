@@ -9,6 +9,11 @@
         <item>AccelerareRallentare</item>
         <item>Rallentare</item>
     </string-array>
+    
+    <string-array name="circular_style">
+        <item>Arrotondare</item>
+        <item>Normale</item>
+    </string-array>
 
     <string name="saturation">Saturazione</string>
     <string name="value">Valore</string>
@@ -25,10 +30,12 @@
     <string name="mirror_mode">Modalità specchio</string>
     <string name="gradients">Gradienti</string>
     <string name="speed">Velocità: %s</string>
+    <string name="factor">Fattore di velocità: %s</string>
     <string name="stroke_width">Larghezza: %ddp</string>
     <string name="separator_length">Separatore: %ddp</string>
     <string name="sections_count">Sezioni: %s</string>
     <string name="interpolator">Interpolator:</string>
+    <string name="c_style">Stile:</string>
     <string name="xposed_description">Sostituisce le barre di avanzamento originali per colpi personalizzati e dolci</string>
     <string name="tap_to_add">Toccare per aggiungere un colore</string>
     <string name="tap_to_change">Toccare per cambiare il colore</string>
@@ -46,5 +53,12 @@
 	<string name="pref_hide_launcher_icon_title">Nascondi icona launcher</string>
     <string name="pref_hide_launcher_icon_summary">Potrebbe richiedere il riavvio del launcher</string>
     <string name="reboot_required">Le modifiche saranno applicate dopo il riavvio</string>
+    
+    <!-- Navigation Drawer -->
+    
+    <string name="drawer_open">Menu aperto</string>
+    <string name="drawer_close">Menu chiuso</string>
+    <string name="support">Guida e feedback</string>
+    <string name="donate">Donare</string>
 
 </resources>

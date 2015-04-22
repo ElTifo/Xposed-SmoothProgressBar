@@ -34,6 +34,12 @@
     <color name="button_material_light">#ffd6d7d7</color>
     
     <color name="transparent">#00FFFFFF</color>
+    
+    <color name="DrawerBackground">#FFF</color>
+    <color name="DrwawerTextPrimaryColor">#212121</color>
+    <color name="NavigationColor">#000</color>
+    
+    <drawable name="selected_gray">#0c000000</drawable>
 	
 	<!--Material colors-->    
     <!-- Red -->

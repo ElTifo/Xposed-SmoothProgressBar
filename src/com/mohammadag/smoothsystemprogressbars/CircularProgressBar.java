@@ -1,5 +1,7 @@
 package com.mohammadag.smoothsystemprogressbars;
 
+import com.mohammadag.smoothsystemprogressbars.CircularProgressDrawable.Style;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -29,13 +31,14 @@ public class CircularProgressBar extends ProgressBar {
 		
 		final float scale = context.getResources().getDisplayMetrics().density;
 		final int color = Color.parseColor("#33b5e5");
-		final int[] colors = mSettingsHelper.getProgressBarColors();
-		final float strokeWidth = mSettingsHelper.getStrokeWidth(scale);
-		final float sweepSpeed = mSettingsHelper.getSpeed();
-		final float rotationSpeed = mSettingsHelper.getSpeed();
+		final int[] colors = mSettingsHelper.getCircularBarColors();
+		final float strokeWidth = mSettingsHelper.getCStrokeWidth(scale);
+		final float sweepSpeed = mSettingsHelper.getCSpeed();
+		final float rotationSpeed = mSettingsHelper.getCSpeed();
 		final int minSweepAngle = mSettingsHelper.getMinSweepAngle();
 		final int maxSweepAngle = mSettingsHelper.getMaxSweepAngle();
-		final Interpolator interpolator = mSettingsHelper.getProgressBarInterpolator();
+		final Interpolator interpolator = mSettingsHelper.getCircularBarInterpolator();
+		final Style style = mSettingsHelper.getStyle();
 		
 	    Drawable indeterminateDrawable;
 	    CircularProgressDrawable.Builder builder = new CircularProgressDrawable.Builder(context)
@@ -44,7 +47,8 @@ public class CircularProgressBar extends ProgressBar {
 	        .strokeWidth(strokeWidth)
 	        .minSweepAngle(minSweepAngle)
 	        .maxSweepAngle(maxSweepAngle)
-	        .sweepInterpolator(interpolator);
+	        .sweepInterpolator(interpolator)
+	        .style(style);
 
 	    if (colors != null && colors.length > 0)
 	      builder.colors(colors);

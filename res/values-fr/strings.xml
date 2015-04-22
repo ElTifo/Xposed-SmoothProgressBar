@@ -9,6 +9,11 @@
         <item>AccélérerRalentir</item>
         <item>Ralentir</item>
     </string-array>
+    
+    <string-array name="circular_style">
+        <item>Arrondie</item>
+        <item>Normal</item>
+    </string-array>
 
     <string name="saturation">Saturation</string>
     <string name="value">Valeur</string>
@@ -25,10 +30,12 @@
     <string name="mirror_mode">Mode miroir</string>
     <string name="gradients">Dégradé</string>
     <string name="speed">Vitesse : %s</string>
+    <string name="factor">Facteur de vitesse: %s</string>
     <string name="stroke_width">Largeur de trait : %ddp</string>
     <string name="separator_length">Longueur de séparation : %ddp</string>
     <string name="sections_count">Sections : %s</string>
     <string name="interpolator">Interpolateur :</string>
+    <string name="c_style">Style:</string>
     <string name="xposed_description">Remplace les barres de progression avec une mise en œuvre plus fluide</string>
     <string name="tap_to_add">Appuyez pour ajouter une couleur</string>
     <string name="tap_to_change">Appuyez pour modifier une couleur</string>
@@ -46,5 +53,12 @@
 	<string name="pref_hide_launcher_icon_title">Masquer l\'icône du lanceur</string>
     <string name="pref_hide_launcher_icon_summary">Peut nécessiter de redémarrer le lanceur</string>
     <string name="reboot_required">Le changement sera pris en compte après redémarrage</string>
+    
+    <!-- Navigation Drawer -->
+    
+    <string name="drawer_open">Menu ouvre</string>
+    <string name="drawer_close">Menu fermé</string>
+    <string name="support">Aide et commentaires</string>
+    <string name="donate">Donner</string>
 
 </resources>

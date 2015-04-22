@@ -20,6 +20,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -47,7 +48,6 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
-
 import static android.view.GestureDetector.SimpleOnGestureListener;
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
@@ -87,7 +87,8 @@ public class MaterialRippleLayout extends FrameLayout {
 
     private float radius;
 
-    private AdapterView parentAdapter;
+    @SuppressWarnings("rawtypes")
+	private AdapterView parentAdapter;
     private View        childView;
 
     private AnimatorSet    rippleAnimator;
@@ -178,7 +179,8 @@ public class MaterialRippleLayout extends FrameLayout {
         return !findClickableViewInChild(childView, (int) event.getX(), (int) event.getY());
     }
 
-    @Override
+    @SuppressLint("ClickableViewAccessibility")
+	@Override
     public boolean onTouchEvent(MotionEvent event) {
         boolean superOnTouchEvent = super.onTouchEvent(event);
 
@@ -385,7 +387,8 @@ public class MaterialRippleLayout extends FrameLayout {
         return false;
     }
 
-    private AdapterView findParentAdapterView() {
+    @SuppressWarnings("rawtypes")
+	private AdapterView findParentAdapterView() {
         if (parentAdapter != null) {
             return parentAdapter;
         }
@@ -626,7 +629,8 @@ public class MaterialRippleLayout extends FrameLayout {
      */
     private class PerformClickEvent implements Runnable {
 
-        @Override public void run() {
+        @SuppressWarnings("rawtypes")
+		@Override public void run() {
             if (mHasPerformedLongPress) return;
 
             // if parent is an AdapterView, try to call its ItemClickListener
@@ -641,7 +645,8 @@ public class MaterialRippleLayout extends FrameLayout {
             }
         }
 
-        private void clickAdapterView(AdapterView parent) {
+        @SuppressWarnings("rawtypes")
+		private void clickAdapterView(AdapterView parent) {
             final int position = parent.getPositionForView(MaterialRippleLayout.this);
             final long itemId = parent.getAdapter() != null
                 ? parent.getAdapter().getItemId(position)

@@ -9,6 +9,11 @@
         <item>AcelerarDecelerar</item>
         <item>Decelerar</item>
     </string-array>
+    
+    <string-array name="circular_style">
+        <item>Redondeado</item>
+        <item>Normal</item>
+    </string-array>
 
     <string name="saturation">Saturación</string>
     <string name="value">Valor</string>
@@ -25,10 +30,12 @@
     <string name="mirror_mode">Modo espejo</string>
     <string name="gradients">Gradientes</string>
     <string name="speed">Velocidad: %s</string>
+    <string name="factor">Factor de velocidad: %s</string>
     <string name="stroke_width">Ancho de trazo: %ddp</string>
     <string name="separator_length">Separador: %ddp</string>
     <string name="sections_count">Secciones: %s</string>
     <string name="interpolator">Interpolador:</string>
+    <string name="c_style">Estilo:</string>
     <string name="xposed_description">Sustituye las barras de progreso originales por unos trazos personalizados y suaves</string>
     <string name="tap_to_add">Pulse para añadir un color</string>
     <string name="tap_to_change">Pulse para cambiar de color</string>
@@ -46,5 +53,12 @@
 	<string name="pref_hide_launcher_icon_title">Ocultar icono del lanzador</string>
     <string name="pref_hide_launcher_icon_summary">Puede requerir reinicio del lanzador</string>
     <string name="reboot_required">Los cambios se aplicarán después de reiniciar</string>
+    
+    <!-- Navigation Drawer -->
+    
+    <string name="drawer_open">Menú abierto</string>
+    <string name="drawer_close">Menú cerrado</string>
+    <string name="support">Sugerencias y ayuda</string>
+    <string name="donate">Donar</string>
 
 </resources>

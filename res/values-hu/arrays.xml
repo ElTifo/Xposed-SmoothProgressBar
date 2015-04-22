@@ -19,4 +19,8 @@
         <item>Gyorsul-lassít</item>
         <item>lassít</item>
     </string-array>
+    <string-array name="circular_style">
+        <item>Lekerekített</item>
+        <item>Normál</item>
+    </string-array>
 </resources>

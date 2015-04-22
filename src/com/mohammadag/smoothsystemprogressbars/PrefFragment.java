@@ -40,14 +40,8 @@ public class PrefFragment extends PreferenceFragment implements OnSharedPreferen
         super.onStart();
         mPrefs.registerOnSharedPreferenceChangeListener(this);
     }
-
-    @Override
-    public void onStop() {
-        mPrefs.unregisterOnSharedPreferenceChangeListener(this);
-        super.onStop();
-    }
-    
-    @Override
+	
+	@Override
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
     	
     	/* Taken from Peter Gregus's GravityBox Project (C3C076@xda)*/ 
@@ -56,11 +50,17 @@ public class PrefFragment extends PreferenceFragment implements OnSharedPreferen
     			PackageManager.COMPONENT_ENABLED_STATE_DISABLED :
     				PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
     			getActivity().getPackageManager().setComponentEnabledSetting(
-    				new ComponentName(getActivity(), "com.mohammadag.smoothsystemprogressbars.SettingsActivityAlias"),
+    				new ComponentName(getActivity(), "com.mohammadag.smoothsystemprogressbars.MainAlias"),
 	                mode, PackageManager.DONT_KILL_APP);
 			}
     	if (rebootKeys.contains(key))
             Toast.makeText(getActivity(), getString(R.string.reboot_required), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onStop() {
+        mPrefs.unregisterOnSharedPreferenceChangeListener(this);
+        super.onStop();
     }
     
 }

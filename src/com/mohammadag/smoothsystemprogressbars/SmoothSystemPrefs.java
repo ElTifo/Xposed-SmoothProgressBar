@@ -1,37 +1,29 @@
 package com.mohammadag.smoothsystemprogressbars;
 
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class SmoothSystemPrefs extends ActionBarActivity {
-	
-	private Toolbar toolbar;
+public class SmoothSystemPrefs extends Fragment {
 	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		setContentView(R.layout.prefs);
-		
-		toolbar = (Toolbar) findViewById(R.id.tool_bar);
-        
-		setSupportActionBar(toolbar);
-		
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		getFragmentManager().beginTransaction().replace(R.id.pref_frame, new PrefFragment()).commit();
-		
+		getActivity().setTheme(R.style.Theme_Prefs);
 	}
 	
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+		
+		return inflater.inflate(R.layout.prefs, container, false);
+	}
 	
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		if (item.getItemId() == android.R.id.home) {
-			onBackPressed();
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+    public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		getFragmentManager().beginTransaction().replace(R.id.pref_frame, new PrefFragment()).commit();
+    }
+	
 }

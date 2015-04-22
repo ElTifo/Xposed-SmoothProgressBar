@@ -19,10 +19,9 @@ import com.larswerkman.holocolorpicker.ColorPicker.OnColorChangedListener;
 import com.larswerkman.holocolorpicker.OpacityBar;
 import com.larswerkman.holocolorpicker.SaturationBar;
 import com.larswerkman.holocolorpicker.ValueBar;
-
 import com.mohammadag.smoothsystemprogressbars.MaterialRippleLayout;
 
-public class ColorPickerActivity extends ActionBarActivity implements OnColorChangedListener {
+public class ColorPickerActivity extends ActionBarActivity implements OnColorChangedListener, NavigationDrawerCallbacks {
 
 	private EditText editText;
 	private String prefColor;
@@ -43,7 +42,7 @@ public class ColorPickerActivity extends ActionBarActivity implements OnColorCha
 		
 		Bundle bundle = getIntent().getExtras();
 		String prefTitle = bundle.getString("title");
-		mPosition = bundle.getInt("key");
+		mPosition = bundle.getInt("position");
 		prefColor = bundle.getString("color");
 
 		setTitle(prefTitle);
@@ -139,22 +138,18 @@ public class ColorPickerActivity extends ActionBarActivity implements OnColorCha
 	}
 
 	private void returnResults() {
-		try {
-			String text = editText.getText().toString();
-	
-			Intent intent = new Intent();
-			intent.putExtra("key", mPosition);
-			if (isFullyTransparent(text)) {
-				text = "00000000";
-			}
-			intent.putExtra("color", text);
-			//intent.putExtra("enabled", enabledSwitch.isChecked());
-			
-			setResult(ActionBarActivity.RESULT_OK, intent);
-			finish();
-		} catch (IllegalArgumentException e) {
-			Toast.makeText(getApplicationContext(), R.string.invalid_color, Toast.LENGTH_SHORT).show();
+		String text = editText.getText().toString();
+		
+		Intent intent = new Intent();
+		intent.putExtra("position", mPosition);
+		if (isFullyTransparent(text)) {
+			text = "00000000";
 		}
+		intent.putExtra("color", text);
+		//intent.putExtra("enabled", enabledSwitch.isChecked());
+		
+		super.setResult(ActionBarActivity.RESULT_OK, intent);
+		finish();
 	}
 
 	private void updateEdittext(String color) {
@@ -188,5 +183,11 @@ public class ColorPickerActivity extends ActionBarActivity implements OnColorCha
 	public void onBackPressed() {
 		setResult(ActionBarActivity.RESULT_CANCELED);
 		super.onBackPressed();
+	}
+
+	@Override
+	public void onNavigationDrawerItemSelected(int position) {
+		// TODO Auto-generated method stub
+		
 	}
 }
