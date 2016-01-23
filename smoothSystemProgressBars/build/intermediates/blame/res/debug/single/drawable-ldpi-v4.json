@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu_pp.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable-ldpi\\ic_menu_pp.png"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu_c.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable-ldpi\\ic_menu_c.png"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu_h.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable-ldpi\\ic_menu_h.png"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu_xda.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable-ldpi\\ic_menu_xda.png"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_save.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable-ldpi\\ic_save.png"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu_prefs.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable-ldpi\\ic_menu_prefs.png"
+    }
+]

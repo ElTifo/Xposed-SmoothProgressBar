@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="circular_style">
+        <item>Закругленный</item>
+        <item>Нормальный</item>
+    </string-array>
+    <array name="colors">
+        <item>@color/holo_blue_dark</item>
+        <item>@color/holo_yellow_dark</item>
+        <item>@color/holo_green_dark</item>
+        <item>@color/holo_purple_dark</item>
+        <item>@color/holo_red_dark</item>
+    </array>
+    <array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </array>
+    <string-array name="interpolators">
+        <item>Ускорение</item>
+        <item>Линейный</item>
+        <item>УскорениеЗамедление</item>
+        <item>Замедление</item>
+    </string-array>
+    <string name="abc_action_bar_home_description">Перейти на главный экран</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Перейти вверх</string>
+    <string name="abc_action_menu_overflow_description">Другие параметры</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Показать все</string>
+    <string name="abc_activitychooserview_choose_application">Выбрать приложение</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"ОТКЛ."</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ВКЛ."</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Поиск"</string>
+    <string name="abc_searchview_description_clear">Удалить запрос</string>
+    <string name="abc_searchview_description_query">Поисковый запрос</string>
+    <string name="abc_searchview_description_search">Поиск</string>
+    <string name="abc_searchview_description_submit">Отправить запрос</string>
+    <string name="abc_searchview_description_voice">Голосовой поиск</string>
+    <string name="abc_shareactionprovider_share_with">Открыть доступ</string>
+    <string name="abc_shareactionprovider_share_with_application">Открыть доступ пользователю %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="app_name">Smooth System Progress Bars</string>
+    <string name="apply">Применить</string>
+    <string name="c_style">Стиль:</string>
+    <item name="cpb_default_rotation_speed" type="string">1.0</item>
+    <item name="cpb_default_sweep_speed" type="string">1.0</item>
+    <string name="donate">Содействовать</string>
+    <string name="drawer_close">Меню закрыта</string>
+    <string name="drawer_open">Открывает Меню</string>
+    <string name="factor">Коэффициент скорости: %s</string>
+    <string name="general_prefs">Настройки</string>
+    <string name="gradients">Градиенты</string>
+    <string name="hold_to_delete">Нажмите и удерживайте для удаления</string>
+    <string name="hold_to_revert">Нажмите, чтобы изменить или удерживайте, чтобы установить цвета по умолчанию</string>
+    <string name="interpolator">Интерполятор:</string>
+    <string name="invalid_color">Неправильный цвет</string>
+    <string name="item_successfully_saved">Настройки успешно сохранены!</string>
+    <string name="mirror_mode">Режим зеркала</string>
+    <string name="opacity">Непрозрачность</string>
+    <string name="pref_enable_circular_summary">Включить или отключить круглую модифицированную полосу загрузки</string>
+    <string name="pref_enable_circular_title">Круговой MOD</string>
+    <string name="pref_enable_horizontal_summary">Включить или отключить модифицированную горизонтальную полосу загрузки</string>
+    <string name="pref_enable_horizontal_title">Горизонтальный MOD</string>
+    <string name="pref_hide_launcher_icon_summary">Может потребоваться перезапуск лончера</string>
+    <string name="pref_hide_launcher_icon_title">Скрыть значок из лончера</string>
+    <string name="prefs">Настройки</string>
+    <string name="preview">Предросмотр</string>
+    <string name="reboot_required">Изменения вступят в силу после перезагрузки</string>
+    <string name="restore">Восстановить</string>
+    <string name="reversed">Развернуть</string>
+    <string name="saturation">Насыщенность</string>
+    <string name="save">Сохранить</string>
+    <string name="scroll_down_hint">Прокрутите список, чтобы добавить больше цветов</string>
+    <string name="sections_count">Количество секций : %s</string>
+    <string name="separator_length">Длина разделителя: %ddp</string>
+    <string name="speed">Скорость: %s</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="stroke_width">Высота черты: %ddp</string>
+    <string name="support">Помощь и обратная связь</string>
+    <string name="tap_to_add">Нажмите, чтобы добавить цвет</string>
+    <string name="tap_to_change">Нажмите, чтобы изменить цвет</string>
+    <string name="value">Затемнение</string>
+    <string name="xposed_description">Заменяет ProgressBar с более плавной реализацией</string>
+</resources>

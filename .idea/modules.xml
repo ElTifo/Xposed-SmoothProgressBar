@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Xposed-SmoothProgressBar.iml" filepath="$PROJECT_DIR$/Xposed-SmoothProgressBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/holoColorPickermaster/holoColorPickermaster.iml" filepath="$PROJECT_DIR$/holoColorPickermaster/holoColorPickermaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smoothSystemProgressBars/smoothSystemProgressBars.iml" filepath="$PROJECT_DIR$/smoothSystemProgressBars/smoothSystemProgressBars.iml" />
+    </modules>
+  </component>
+</project>

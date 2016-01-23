@@ -1,0 +1,105 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:2:1-46:12
+	package
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:3:5-54
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:5:5-32
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:4:5-29
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [Xposed-SmoothProgressBar:holoColorPickermaster:unspecified] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\Xposed-SmoothProgressBar\holoColorPickermaster\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml
+application
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:11:5-44:19
+MERGED from [com.android.support:support-v4:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:14:9-41
+	android:allowBackup
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:12:9-35
+	android:icon
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:13:9-43
+	android:theme
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:15:9-40
+meta-data#xposedmodule
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:16:9-18:36
+	android:value
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:18:13-33
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:17:13-40
+meta-data#xposedminversion
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:19:9-21:35
+	android:value
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:21:13-32
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:20:13-44
+meta-data#xposeddescription
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:22:9-24:58
+	android:value
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:24:13-55
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:23:13-45
+activity#com.mohammadag.smoothsystemprogressbars.Main
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:26:3-33:20
+	android:screenOrientation
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:28:13-49
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:27:13-72
+intent-filter#android.intent.action.MAIN+de.robv.android.xposed.category.MODULE_SETTINGS
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:30:25-66
+category#de.robv.android.xposed.category.MODULE_SETTINGS
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:31:17-92
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:31:27-89
+activity-alias#com.mohammadag.smoothsystemprogressbars.MainAlias
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:34:3-42:26
+	android:enabled
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:36:13-35
+	android:screenOrientation
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:35:13-49
+	android:targetActivity
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:37:13-82
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:34:19-83
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:38:13-41:29
+category#android.intent.category.LAUNCHER
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:40:17-77
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:40:27-74
+activity#com.mohammadag.smoothsystemprogressbars.ColorPickerActivity
+ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:43:9-175
+	android:screenOrientation
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:43:94-130
+	android:windowSoftInputMode
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:43:131-172
+	android:name
+		ADDED from E:\Android\Xposed-SmoothProgressBar\smoothSystemProgressBars\src\main\AndroidManifest.xml:43:19-93

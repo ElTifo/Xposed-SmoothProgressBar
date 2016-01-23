@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="circular_style">
+        <item>Arrondie</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="interpolators">
+        <item>Accélérer</item>
+        <item>Linéaire</item>
+        <item>AccélérerRalentir</item>
+        <item>Ralentir</item>
+    </string-array>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Revenir à l\'accueil"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Revenir en haut de la page"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Plus d\'options"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"OK"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tout afficher"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Sélectionner une application"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"DÉSACTIVÉ"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ACTIVÉ"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Rechercher…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Effacer la requête"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Requête de recherche"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Rechercher"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Envoyer la requête"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Recherche vocale"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partager avec"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partager avec %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Réduire"</string>
+    <string name="app_name">Barres de Progression Système</string>
+    <string name="apply">Appliquer</string>
+    <string name="c_style">Style:</string>
+    <string name="donate">Donner</string>
+    <string name="drawer_close">Menu fermé</string>
+    <string name="drawer_open">Menu ouvre</string>
+    <string name="factor">Facteur de vitesse: %s</string>
+    <string name="general_prefs">Paramètres</string>
+    <string name="gradients">Dégradé</string>
+    <string name="hold_to_delete">Appuyez pour modifier ou maintenez pour supprimer la couleur</string>
+    <string name="hold_to_revert">Appuyez pour modifier ou maintenez pour définir la couleur par défaut</string>
+    <string name="interpolator">Interpolateur :</string>
+    <string name="invalid_color">Couleur incorrecte</string>
+    <string name="item_successfully_saved">Éléments sauvegardés avec succès !</string>
+    <string name="mirror_mode">Mode miroir</string>
+    <string name="opacity">Opacité</string>
+    <string name="pref_enable_circular_summary">Activer ou désactiver la barre de progression circulaire personnalisée</string>
+    <string name="pref_enable_circular_title">MOD Circulaire</string>
+    <string name="pref_enable_horizontal_summary">Activer ou désactiver la barre de progression horizontale personnalisée</string>
+    <string name="pref_enable_horizontal_title">MOD Horizontal</string>
+    <string name="pref_hide_launcher_icon_summary">Peut nécessiter de redémarrer le lanceur</string>
+    <string name="pref_hide_launcher_icon_title">Masquer l\'icône du lanceur</string>
+    <string name="prefs">Paramètres</string>
+    <string name="preview">Aperçu</string>
+    <string name="reboot_required">Le changement sera pris en compte après redémarrage</string>
+    <string name="restore">Restaurer</string>
+    <string name="reversed">Inversé</string>
+    <string name="saturation">Saturation</string>
+    <string name="save">Enregistrer</string>
+    <string name="scroll_down_hint">Faites défiler la liste pour ajouter plus de couleurs</string>
+    <string name="sections_count">Sections : %s</string>
+    <string name="separator_length">Longueur de séparation : %ddp</string>
+    <string name="speed">Vitesse : %s</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="stroke_width">Largeur de trait : %ddp</string>
+    <string name="support">Aide et commentaires</string>
+    <string name="tap_to_add">Appuyez pour ajouter une couleur</string>
+    <string name="tap_to_change">Appuyez pour modifier une couleur</string>
+    <string name="value">Valeur</string>
+    <string name="xposed_description">Remplace les barres de progression avec une mise en œuvre plus fluide</string>
+</resources>

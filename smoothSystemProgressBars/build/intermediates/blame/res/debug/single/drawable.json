@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\scrubber_progress_horizontal_holo_dark.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\scrubber_progress_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_large_holo.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\progress_large_holo.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\row_selector.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\row_selector.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_check_off_holo_light_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\btn_check_off_holo_light_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\selector.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\selector.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\scrubber_control_selector_holo.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\scrubber_control_selector_holo.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_small_holo.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\progress_small_holo.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_indeterminate_horizontal_holo.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\progress_indeterminate_horizontal_holo.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\wallpaper.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\wallpaper.png"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_check_on_holo_light_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\btn_check_on_holo_light_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\avatar.png",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\avatar.png"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_check_off_holo_dark_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\btn_check_off_holo_dark_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_check_on_holo_dark_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\btn_check_on_holo_dark_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_medium_holo.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\progress_medium_holo.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_check_holo_light.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\btn_check_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_check_holo_dark.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\src\\main\\res\\drawable\\btn_check_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\Android\\Xposed-SmoothProgressBar\\smoothSystemProgressBars\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    }
+]
